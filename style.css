@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: #ddd;
+}
+
+.header-container {
+  background-color: rgb(95, 197, 238);
+}
+.header {
+  width: 100vh;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.links a {
+  color: #fff;
+  font-size: 18px;
+  transition: 0.1s;
+}
+.links a:hover {
+  color: #e9e9e9;
+}
+main {
+  padding: 20px 0;
+  height: calc(100vh - 41px);
+}
+.main-categories {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+}
+.box-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+
+.main-categories .box {
+  height: 230px;
+  box-shadow: 1px 1px 5px #000;
+}
+.main-categories .box img {
+  height: inherit;
+}
+h3 {
+  color: #000;
+}
+.clothes {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  justify-content: space-around;
+  align-items: center;
+  row-gap: 10px;
+}
+.clothes-box {
+  width: 200px;
+  height: 250px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: 1px 1px 5px #9e9e9e;
+  border-radius: 3px;
+  gap: 5px;
+}
+.clothes-box img {
+  height: 100px;
+  background-size: cover;
+  border-radius: 3px 3px 0 0;
+  flex: 1;
+}
+.title,
+.price {
+  align-self: flex-start;
+}
+.logo-ico {
+  height: 50px;
+  margin-top: 5px;
+}
